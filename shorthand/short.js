@@ -76,3 +76,59 @@ function add(num1, num2) {
 
 //Shorthand
 const add = (num1, num2) => num1 + num2;
+
+//Template Literals
+//Longhand
+console.log('You got a missed call from ' + number + ' at ' + time);
+
+//Shorthand
+console.log(`You got a missed call from ${number} at ${time}`);
+
+// Multiple condition checking
+//Longhand
+if (value === 1 || value === 'one' || value === 2 || value === 'two') {
+  // Execute some code
+}
+
+// Shorthand 1
+if ([1, 'one', 2, 'two'].indexOf(value) >= 0) {
+  // Execute some code
+}
+
+// Shorthand 2
+if ([1, 'one', 2, 'two'].includes(value)) {
+  // Execute some code
+}
+
+//Object Property Assignment
+let firstname = 'Amitav';
+let lastname = 'Mishra';
+
+//Longhand
+let obj = { firstname: firstname, lastname: lastname };
+
+//Shorthand
+let obj = { firstname, lastname };
+
+//String into a Number
+
+//Longhand
+let total = parseInt('453');
+let average = parseFloat('42.6');
+
+//Shorthand
+let total = +'453';
+let average = +'42.6';
+
+//Repeat a string multiple times
+//Longhand
+let str = '';
+for (let i = 0; i < 5; i++) {
+  str += 'Hello ';
+}
+console.log(str); // Hello Hello Hello Hello Hello
+
+// Shorthand
+'Hello '.repeat(5);
+
+//Exponent Power
