@@ -132,3 +132,44 @@ console.log(str); // Hello Hello Hello Hello Hello
 'Hello '.repeat(5);
 
 //Exponent Power
+// Longhand
+const power = Math.pow(4, 3); // 64
+
+// Shorthand
+const power = 4 ** 3; // 64
+
+// Find max and min numbers in an array
+// Shorthand
+const arr = [2, 8, 15, 4];
+Math.max(...arr); // 15
+Math.min(...arr); // 2
+
+//For loop
+let arr = [10, 20, 30, 40];
+
+//Longhand
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+//Shorthand
+//for of loop
+for (const val of arr) {
+  console.log(val);
+}
+
+//for in loop
+for (const index in arr) {
+  console.log(`index: ${index} and value: ${arr[index]}`);
+}
+
+//Merging of arrays
+let arr1 = [20, 30];
+
+// Longhand
+let arr2 = arr1.concat([60, 80]);
+// [20, 30, 60, 80]
+
+// Shorthand
+let arr2 = [...arr1, 60, 80];
+// [20, 30, 60, 80]
