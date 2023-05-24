@@ -173,3 +173,38 @@ let arr2 = arr1.concat([60, 80]);
 // Shorthand
 let arr2 = [...arr1, 60, 80];
 // [20, 30, 60, 80]
+
+//JavaScript foreach Loop Shorthand
+// Longhand
+for (var i = 0; i < allImgs.length; i++)
+  // Shorthand
+  // Shorthand for Array.forEach
+  for (var i in allImgs)
+    function logArrayElements(element, index, array) {
+      console.log('a[' + index + '] = ' + element);
+    }
+
+[2, 5, 9].forEach(logArrayElements);
+// logs: a[0] = 2, a[1] = 5, a[2] = 9
+
+//If Presence Shorthand
+
+// Longhand
+if (likeJavaScript === true)
+  if (likeJavaScript)
+    // Shorthand
+    // Other Examples:
+    // If 'a' is NOT equal to true, then do something.
+    // Longhand
+    var a;
+
+if (a !== true) {
+  // do something...
+}
+
+// Shorthand
+var a;
+
+if (!a) {
+  // do something...
+}
