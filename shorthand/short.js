@@ -208,3 +208,45 @@ var a;
 if (!a) {
   // do something...
 }
+
+//Shorthand for array.find()
+
+// longhand
+
+const usernames = [
+  { firstname: 'Mary', lastname: 'Jones' },
+  { firstname: 'John', lastname: 'Smith' },
+  { firstname: 'Susan', lastname: 'Brown' },
+  { firstname: 'William', lastname: 'Parker' }
+];
+
+function findName(name) {
+  for (let i = 0; i < usernames.length; ++i) {
+    if (usernames[i].firstname === 'John') {
+      return usernames[i];
+    }
+  }
+}
+console.log(findName('John'));
+
+// shorthand
+
+const usernames = [
+  { firstname: 'Mary', lastname: 'Jones' },
+  { firstname: 'John', lastname: 'Smith' },
+  { firstname: 'Susan', lastname: 'Brown' },
+  { firstname: 'William', lastname: 'Parker' }
+];
+
+console.log(usernames.find((username) => username.firstname === 'John'));
+
+//Return shorthand
+// longhand
+
+function calcCircle(radius) {
+  return Math.PI * radius * radius;
+}
+
+// shorthand
+
+calcCircle = (radius) => Math.PI * radius * radius;
