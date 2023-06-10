@@ -136,3 +136,60 @@ const nums2 = [4,5,6, …nums1];
 // cloning arrays
 const arr = [1, 2, 3, 4,5];
 const arr2 = […arr];
+
+
+    // Longhand 
+    function add(a, b) { 
+    return a + b; 
+    } 
+    console.log(add(1,2))
+      
+      
+    // Shorthand 
+    const add1 = (a, b) => a + b;
+    console.log(add1(1,2))
+
+  
+	// Longhand
+	let a = parseInt('764');
+	let b = parseFloat('29.3');
+	console.log(a,b)
+	
+	
+	// Shorthand
+	let c = +'764';
+	let d = +'29.3';
+	console.log(c,d)
+
+
+  
+    // Longhand 
+    let a1 = [2, 3]; 
+    let a2 = a1.concat([6, 8]); 
+    console.log(a2)
+      
+    // Output: [2, 3, 6, 8] 
+      
+      
+    // Shorthand 
+    let a3 = [...a1, 6, 8]; 
+    console.log(a3)
+      
+    // Output: [2, 3, 6, 8]
+
+    
+    let value = 1
+        // Longhand 
+        if (value === 1 || value === 'hello' || value === 2 || value === 'world') { 
+        console.log("Done")
+        } 
+          
+        // Shorthand 1
+        if ([1, 'hello', 2, 'world'].indexOf(value) >= 0) { 
+        console.log('Done') 
+        }
+          
+        // Shorthand 2
+        if ([1, 'hello', 2, 'world'].includes(value)) { 
+        console.log('Done') 
+        }
